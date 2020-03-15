@@ -1,1 +1,18 @@
-language java
+language : java
+addons:
+  sonarcloud:
+    organization: "kikizork"
+    token : 3e135d15ef0acdc4d25159428d184cc165392a84
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=kikizork_java_350_ex
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
