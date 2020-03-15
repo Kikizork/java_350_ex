@@ -58,7 +58,7 @@ public class EmployeServiceTestEmbaucheEmploye {
 		}
 
 		// Then
-		Assertions.assertEquals(employeRepository.findLastMatricule(), "100000");
+		Assertions.assertEquals("100000", employeRepository.findLastMatricule());
 	}
 
 	@ParameterizedTest
